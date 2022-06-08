@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarCitizenApi", "src\StarCitizenApi\StarCitizenApi.csproj", "{EA489CF3-28A4-43BF-8A9C-415DC20B6D62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E828EF81-6A0E-451F-9B48-6581C8A1D7C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9AC120B7-44D6-4191-A6D2-C0AF25849171}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{31524CDD-259E-47CE-9623-ACCC9A0D889C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA489CF3-28A4-43BF-8A9C-415DC20B6D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA489CF3-28A4-43BF-8A9C-415DC20B6D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA489CF3-28A4-43BF-8A9C-415DC20B6D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA489CF3-28A4-43BF-8A9C-415DC20B6D62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA489CF3-28A4-43BF-8A9C-415DC20B6D62} = {E828EF81-6A0E-451F-9B48-6581C8A1D7C1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1075B05-3129-4464-86EE-9572FC6B1BAF}
+	EndGlobalSection
+EndGlobal

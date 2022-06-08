@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<!-- platfrom definition -->
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>Latest</LangVersion>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	</PropertyGroup>
+	<!-- package definition -->
+	<PropertyGroup>
+		<VersionPrefix>3.17.1.*</VersionPrefix>
+		<Description>Star Citizen multi-platform API Library</Description>
+		<Copyright>Copyright © 2022-2023 NewSoftWorld</Copyright>
+		<AssemblyTitle>Star Citizen API</AssemblyTitle>
+		<Authors>Denis Ibragimov</Authors>		
+		<AssemblyName>NSW.StarCitizen.API</AssemblyName>
+		<RootNamespace>NSW.StarCitizen.API</RootNamespace>
+		<PackageId>NSW.StarCitizen.API</PackageId>
+		<PackageTags>Star Citizen API;</PackageTags>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageProjectUrl>https://github.com/h0useRus/StarCitizenApi</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReleaseNotes>
+			Initial release
+		</PackageReleaseNotes>
+	</PropertyGroup>
+
+</Project>
