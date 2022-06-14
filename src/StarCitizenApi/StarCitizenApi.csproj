@@ -10,7 +10,7 @@
 	</PropertyGroup>
 	<!-- package definition -->
 	<PropertyGroup>
-		<VersionPrefix>3.17.1.*</VersionPrefix>
+		<VersionPrefix>3.17.1.0</VersionPrefix>
 		<Description>Star Citizen multi-platform API Library</Description>
 		<Copyright>Copyright © 2022-2023 NewSoftWorld</Copyright>
 		<AssemblyTitle>Star Citizen API</AssemblyTitle>
