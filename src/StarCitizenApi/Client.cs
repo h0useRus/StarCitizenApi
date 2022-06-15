@@ -5,6 +5,19 @@
 public class Client : RootFolder
 {
     private readonly RSI _rsi;
+    internal Client(RSI rsi, ClientMode mode) : base(Path.Combine(rsi.RootPath, ClientsFolderName, mode.ToString()))
+    {
+        _rsi = rsi;
+        Mode = mode;
+    }
+    /// <summary>
+    /// The global clients folder name
+    /// </summary>
+    public const string ClientsFolderName = "StarCitizen";
+    /// <summary>
+    /// The executable file name
+    /// </summary>
+    public const string ExecutableFileName = "StarCitizen.exe";
     /// <summary>
     /// The binary folder name.
     /// </summary>
@@ -20,11 +33,9 @@ public class Client : RootFolder
     /// <summary>
     /// The client mode.
     /// </summary>
-    public ClientMode Mode { get; init; }   
-
-    internal Client(RSI rsi, ClientMode mode) : base(Path.Combine(rsi.RootPath, mode.ToString()))
-    {
-        _rsi = rsi;
-        Mode = mode;
-    }
+    public ClientMode Mode { get; init; }
+    /// <summary>
+    /// The client executable file
+    /// </summary>
+    public ExecutableFile Executable => new(Path.Combine(RootPath, BinFolderName, ExecutableFileName));
 }
