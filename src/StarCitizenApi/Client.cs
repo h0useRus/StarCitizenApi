@@ -5,6 +5,18 @@
 public class Client : RootFolder
 {
     /// <summary>
+    /// The binary folder name.
+    /// </summary>
+    public const string BinFolder = "bin";
+    /// <summary>
+    /// The clinet data folder name.
+    /// </summary>
+    public const string DataFolder = "data";
+    /// <summary>
+    /// The user data folder name.
+    /// </summary>
+    public const string UserFolder = "user";
+    /// <summary>
     /// The client mode.
     /// </summary>
     public ClientMode Mode { get; init; }
