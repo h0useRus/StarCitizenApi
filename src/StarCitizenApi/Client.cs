@@ -4,29 +4,27 @@
 /// </summary>
 public class Client : RootFolder
 {
+    private readonly StarCitizenAPI _api;
     /// <summary>
     /// The binary folder name.
     /// </summary>
-    public const string BinFolder = "bin";
+    public const string BinFolderName = "bin64";
     /// <summary>
     /// The clinet data folder name.
     /// </summary>
-    public const string DataFolder = "data";
+    public const string DataFolderName = "data";
     /// <summary>
     /// The user data folder name.
     /// </summary>
-    public const string UserFolder = "user";
+    public const string UserFolderName = "user";
     /// <summary>
     /// The client mode.
     /// </summary>
-    public ClientMode Mode { get; init; }
-    /// <summary>
-    /// Create instance of <see cref="Client"/>. 
-    /// </summary>
-    /// <param name="rootPath">The root Star Citizen folder path.</param>
-    /// <param name="mode">The client mode.</param>
-    public Client(string rootPath, ClientMode mode) : base(Path.Combine(rootPath, mode.ToString()))
+    public ClientMode Mode { get; init; }   
+
+    internal Client(StarCitizenAPI api, ClientMode mode) : base(Path.Combine(api.RootPath, mode.ToString()))
     {
+        _api = api;
         Mode = mode;
     }
 }

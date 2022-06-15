@@ -15,7 +15,7 @@ public abstract class RootFolder
     /// <summary>
     /// Base constructor
     /// </summary>
-    /// <param name="path">The root folder path</param>
+    /// <param name="rootPath">The root folder path</param>
     protected RootFolder(string rootPath)
     {
         RootPath = rootPath;

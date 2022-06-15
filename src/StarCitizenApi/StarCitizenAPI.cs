@@ -17,15 +17,10 @@ public class StarCitizenAPI : RootFolder
         Launcher = GetLauncher();
     }
     /// <summary>
-    /// Get game launcher object.
+    /// Get Star Citizen launcher object.
     /// </summary>
-    /// <param name="launcherFolder">Otional full folder path. If it is not defined, current <see cref="RootFolder"/> and <see cref="Launcher.DefaultFolderName"/> will used for path generation.</param>
-    /// <returns>The launcher object</returns>
+    /// <param name="launcherFolderPath">Otional full folder path. If it is not defined, current <see cref="RootFolder"/> and <see cref="Launcher.DefaultFolderName"/> will used for path generation.</param>
+    /// <returns>The Star Citizen launcher object.</returns>
     public Launcher GetLauncher(string? launcherFolderPath = null)
-        => new(Path.Combine(RootPath, launcherFolderPath ?? Launcher.DefaultFolderName));
-    
-
-    public Client GetClient(ClientMode mode)
-        => new(RootPath, mode);
-    
+        => new(this, Path.Combine(RootPath, launcherFolderPath ?? Launcher.DefaultFolderName));
 }
