@@ -2,17 +2,17 @@
 /// <summary>
 /// Star Citizen API is the simple tool to access various local client APIs.
 /// </summary>
-public class StarCitizenAPI : RootFolder
+public class RSI : RootFolder
 {
     /// <summary>
     /// The game launcher.
     /// </summary>
     public Launcher Launcher { get; init; }
     /// <summary>
-    /// Create instance of <see cref="StarCitizenAPI"/>.
+    /// Create instance of <see cref="RSI"/>.
     /// </summary>
     /// <param name="libraryPath">The root library path.</param>
-    public StarCitizenAPI(string libraryPath) : base(libraryPath)
+    public RSI(string libraryPath) : base(libraryPath)
     {
         Launcher = GetLauncher();
     }

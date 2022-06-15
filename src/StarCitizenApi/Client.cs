@@ -4,7 +4,7 @@
 /// </summary>
 public class Client : RootFolder
 {
-    private readonly StarCitizenAPI _api;
+    private readonly RSI _rsi;
     /// <summary>
     /// The binary folder name.
     /// </summary>
@@ -22,9 +22,9 @@ public class Client : RootFolder
     /// </summary>
     public ClientMode Mode { get; init; }   
 
-    internal Client(StarCitizenAPI api, ClientMode mode) : base(Path.Combine(api.RootPath, mode.ToString()))
+    internal Client(RSI rsi, ClientMode mode) : base(Path.Combine(rsi.RootPath, mode.ToString()))
     {
-        _api = api;
+        _rsi = rsi;
         Mode = mode;
     }
 }

@@ -4,7 +4,7 @@
 /// </summary>
 public class Launcher : RootFolder
 {
-    private readonly StarCitizenAPI _api;
+    private readonly RSI _rsi;
     /// <summary>
     /// The default launcher folder name.
     /// </summary>
@@ -17,9 +17,9 @@ public class Launcher : RootFolder
     /// The <see cref="ClientMode.PTU"/> client instance.
     /// </summary>
     public Client? PTU => GetClient(ClientMode.PTU);
-    internal Launcher(StarCitizenAPI api, string rootPath) : base(rootPath) 
-    { 
-        _api = api;
+    internal Launcher(RSI rsi, string rootPath) : base(rootPath) 
+    {
+        _rsi = rsi;
     }
     /// <summary>
     /// Get Star Citizen client object.
@@ -27,7 +27,7 @@ public class Launcher : RootFolder
     /// <param name="mode">The client mode</param>
     /// <returns>The Star Citizen client object.</returns>
     public Client GetClient(ClientMode mode)
-        => new(_api, mode);
+        => new(_rsi, mode);
     /// <summary>
     /// Get all installed Star Citizen clients.
     /// </summary>
