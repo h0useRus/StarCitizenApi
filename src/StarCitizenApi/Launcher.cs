@@ -1,11 +1,16 @@
 ﻿namespace NSW.StarCitizen.API;
-
-public class Launcher
+/// <summary>
+/// The game launcher.
+/// </summary>
+public class Launcher : RootFolder
 {
+    /// <summary>
+    /// The default launcher folder name.
+    /// </summary>
     public const string DefaultFolderName = "RSI Launcher";
-    public string FolderPath { get; init; }
-    public Launcher(string folderPath)
-    {
-        FolderPath = folderPath;
-    }
+    /// <summary>
+    /// Create instance of <see cref="Launcher"/>.
+    /// </summary>
+    /// <param name="rootPath">The launcher root path.</param>
+    public Launcher(string rootPath) : base(rootPath) { }
 }
